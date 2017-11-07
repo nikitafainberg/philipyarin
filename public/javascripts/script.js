@@ -59,7 +59,6 @@ function aboutView() {
 function clean() {
     if($('#lightBox').length > 0) {
         $('#menu').animate({right: '-=140'}, 500);
-        // $('footer').animate({right: '-=140'}, 500);
         $('#lightBoxHolder').remove();
         $('#container').width('65%');
     }
@@ -142,7 +141,6 @@ function imageClicked() {
             if (!$('#lightBox').length > 0){
 
                 $('#menu').animate({right: '+=140'}, 350);
-                // $('footer').animate({right: '+=140'}, 350);
                 $('#container').width($(window).width() - $('#menu').width() - 50);
 
                 $('#container').append('<div id="lightBoxHolder" style="position: relative; height: 100%"><div id="lightBox"><img src=""/></div></div>');
@@ -174,7 +172,6 @@ function imageClicked() {
 
                 $('#lightBox').click(function () {
                     $('#menu').animate({right: '-=140'}, 350);
-                    // $('footer').animate({right: '-=140'}, 350);
                     $('#lightBoxHolder').remove();
                     $('#container').width('65%');
                 });
