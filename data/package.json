@@ -1,0 +1,27 @@
+{
+  "name": "mrfai",
+  "version": "1.0.0",
+  "main": "admin.js",
+  "dependencies": {
+    "async": "^2.5.0",
+    "bluebird": "^3.5.0",
+    "mime": "^2.0.3",
+    "mongoose": "^4.11.12",
+    "resolve-from": "^4.0.0",
+    "socket.io": "^2.0.3",
+    "express": "^4.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "me",
+  "license": "ISC",
+  "description": "server",
+  "keywords": [
+    "phillip",
+    "yarin",
+    "yarin"
+  ]
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #triangle{
+            float: left;
+            width: 30%;
+            display: inline-block;
+        }
+        #telaviv{
+            margin:0 auto;
+            width: 30%;
+            display: inline-block;
+        }
+        #blackAndWhite{
+            float: right;
+            width: 30%;
+            display: inline-block;
+        }
+        img{
+            width: 200px;
+        }
+        form{
+            position: absolute;
+        }
+    </style>
+    <script src="javascripts/jquery-3.2.1.min.js"></script>
+    <script>
+        function deleteImage(type, src) {
+            $.ajax({
+                type: 'DELETE',
+                url: '/admin/' + type + '/' + src,
+                success: function () {
+                    var element = document.getElementById(src);
+                    element.parentNode.removeChild(element);
+                    localStorage.reload();
+                }
+            });
+        }
+
+        function addObject(type) {
+            $('#container').hide();
+            var formForImage = document.getElementById('formForImage');
+            formForImage.style.visibility = 'visible';
+            formForImage.action = '/upload/' + type;
+        }
+    </script>
+</head>
+<body>
+<form id="formForImage" style="visibility: hidden" method="post" enctype="multipart/form-data">
+    <input type="file" name="file"/>
+    <br/>
+    <br/>
+    <a>Title: </a>
+    <input type="text" name="title"/>
+    <br/>
+    <br/>
+    <a>Size: </a>
+    <input type="text" name="size"/>
+    <br/>
+    <br/>
+    <a>Material: </a>
+    <input type="text" name="material"/>
+    <br/>
+    <br/>
+    <a>Year: </a>
+    <input type="text" name="year"/>
+    <br/>
+    <br/>
+    <input type="submit" value="Submit"/>
+</form>
+<div id="container">
+<div id="triangle">
+    <ul>
+        <% data.triangle.forEach(function (item) { %>
+        <li><img id="<%= item.url %>" src="<%= item.url %>" onclick="deleteImage('triangle', '<%= item.url %>')"/></li>
+        <br/>
+        <br/>
+        <% }); %>
+        <li><button onclick="addObject('triangle')">Add new Object</button></li>
+        <br/>
+    </ul>
+</div>
+<div id="telaviv">
+    <ul>
+        <% data.telaviv.forEach(function (item) { %>
+        <li><img id="<%= item.url %>" src="<%= item.url %>" onclick="deleteImage('telaviv', '<%= item.url %>')"/></li>
+        <br/>
+        <br/>
+        <% }); %>
+        <li><button onclick="addObject('telaviv')">Add new Object</button></li>
+        <br/>
+    </ul>
+</div>
+<div id="blackAndWhite">
+    <ul>
+        <% data.blackAndWhite.forEach(function (item) { %>
+        <li><img id="<%= item.url %>" src="<%= item.url %>" onclick="deleteImage('blackAndWhite', '<%= item.url %>')"/></li>
+        <br/>
+        <br/>
+        <% }); %>
+        <li><button onclick="addObject('blackAndWhite')">Add new Object</button></li>
+
+    </ul>
+</div>
+</div>
+</body>
+</html>

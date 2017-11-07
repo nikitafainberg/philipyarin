@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Philip Yarin</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+    <script src="javascripts/jquery-3.2.1.min.js"></script>
+    <script src="javascripts/script.js"></script>
+</head>
+<body onload="init()">
+<div id="title">
+    <img id="name" src="images/philipp_yarin.png"/>
+</div>
+<div id="menuBackground">
+    <div id="menu">
+        <a class="menuElement" onclick="openSubMenu('paint')">PAINTINGS</a>
+        <div id="paint" class="subMenu">
+            <a onclick="changeView('triangle')">Series Triangles</a>
+            <a onclick="changeView('telaviv')">Series Tel-Aviv</a>
+        </div>
+        <div id="restMenu">
+            </br>
+            </br>
+            <a class="menuElement" onclick="openSubMenu('draw')">DRAWINGS</a>
+            <div id="draw" class="subMenu">
+                <a onclick="changeView('blackAndWhite')">Black And White</a>
+            </div>
+            </br>
+            </br>
+            </br>
+            <a class="menuElement" onclick="aboutView()">ABOUT</a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="about" style="position: absolute">
+            <img id="avatar" src="images/avo.jpg">
+            <p id="text">
+                Philipp Yarin was born in 1988 in Moscow. He is a graduate of The All-Russian state institute of cinematography named after S. A. Gerasimov(VGIK) After graduation he worked at animation studios "Animos", "Pilot", "Pchela", "Master-Film" as a director and art-director. He has awards at international animation festivals. Philipp is engaged in painting, graphics and sculpture. Also there is experience in book illustration.
+                <br/>
+                <br/>
+                <br/>
+                Recent Exhibitions:
+                <br/>
+                2011 - Group exhibition "Course number four". Gallery Solyanka VPA. Moscow, Russia
+                <br/>
+                2011 - “We and the forms”. Bogoliubov Arts Library. Moscow, Russia
+                <br/>
+                2011 - “2016 - Museum of Silver age, Moscow — exhibition designer and prop maker
+                <br/>
+                2017 - Special project “The Writer's Kitchen”. Museum-Reserve of A.P. Chekhov “Melikhovo”.Russia — exhibition designer, illustrator, prop maker
+                <br/>
+                <br/>
+                <br/>
+                <a class="link" href="https://www.facebook.com/profile.php?id=100010405035250">Facebook</a>
+                <br/>
+                <a class="link" href="https://www.behance.net/philyarin">Behance</a>
+            </p>
+        </div>
+    </div>
+</div>
+<footer>
+    Website by Nikita Fainberg
+</footer>
+</body>
+</html>

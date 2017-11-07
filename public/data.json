@@ -1,0 +1,183 @@
+{
+  "telaviv": [
+    {
+      "url": "images/draw/TLV_P_01_000.jpg",
+      "title": "Untitled 1",
+      "size": "Size: 45.5 х 52.5",
+      "material": "Material: oil, canvas on hardboard",
+      "year": "2017"
+    },
+    {
+      "url": "images/draw/TLV_P_01_001.jpg",
+      "title": "Untitled 2",
+      "size": "Size: 32.5 х 45",
+      "material": "Material: oil, canvas on hardboard",
+      "year": "2017"
+    },
+    {
+      "url": "images/draw/TLV_P_01_002.jpg",
+      "title": "Tree",
+      "size": "Size: 40.5 х 45.5",
+      "material": "Material: oil, canvas on hardboard",
+      "year": "2017"
+    },
+    {
+      "url": "images/draw/TLV_P_01_003.jpg",
+      "title": "Untitled 4",
+      "size": "???",
+      "material": "Material: oil, canvas on hardboard",
+      "year": "2017"
+    },
+    {
+      "url": "images/draw/TLV_P_01_004.jpg",
+      "title": "Rousette",
+      "size": "Size: 23.5 х 27",
+      "material": "Material: oil, canvas on hardboard",
+      "year": "2017"
+    },
+    {
+      "url": "images/draw/TLV_P_01_005.jpg",
+      "title": "Avocado",
+      "size": "Size: 30 х 40",
+      "material": "Material: oil, canvas",
+      "year": "2017"
+    }
+  ],
+  "triangle": [
+    {
+      "url": "images/paint/IMG_000.jpg",
+      "title": "Untitled 1",
+      "size": "Size: 40.5 х 54",
+      "material": "Material: oil, canvas on hardboard",
+      "year": "2017"
+    },
+    {
+      "url": "images/paint/IMG_001.jpg",
+      "title": "Untitled 2",
+      "size": "Size: 40.5 х 52.5",
+      "material": "Material: oil, canvas on hardboard",
+      "year": "2017"
+    },
+    {
+      "url": "images/paint/IMG_002.jpg",
+      "title": "Untitled 3",
+      "size": "Size: 170 х 90",
+      "material": "Material: oil, canvas",
+      "year": "2017"
+    },
+    {
+      "url": "images/paint/IMG_003.jpg",
+      "title": "Untitled 3",
+      "size": "Size: 170 х 90",
+      "material": "Material: oil, canvas",
+      "year": "2017"
+    }
+  ],
+  "blackAndWhite": [
+    {
+      "url": "images/blackAndWhite/img01.jpg",
+      "title": "Series 'Ramat Gan'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img02.jpg",
+      "title": "Series 'Ramat Gan'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img03.jpg",
+      "title": "Series 'Ramat Gan'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img04.jpg",
+      "title": "Series 'Tel Aviv'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img05.jpg",
+      "title": "Series 'Hebron'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img06.jpg",
+      "title": "Series 'Hebron'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img07.jpg",
+      "title": "Series 'Ramat Gan'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img08.jpg",
+      "title": "Series 'Ramat Gan'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img09.jpg",
+      "title": "Series 'Ramat Gan'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img10.jpg",
+      "title": "Series 'Ramat Gan'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img11.jpg",
+      "title": "Series 'Ramat Gan'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img12.jpg",
+      "title": "Series 'Ramat Gan'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img13.jpg",
+      "title": "Series 'Tel Aviv'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img14.jpg",
+      "title": "Series 'Tel Aviv'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    },
+    {
+      "url": "images/blackAndWhite/img15.jpg",
+      "title": "Series 'Hebron'",
+      "size": "",
+      "material": "Ink on paper",
+      "year": "2017"
+    }
+  ]
+}
