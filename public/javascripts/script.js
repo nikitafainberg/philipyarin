@@ -1,8 +1,8 @@
-var container, table, boolean;
+var container, table, boolean, loader;
 
 function init() {
     container = document.getElementById('container');
-
+    loader = new Worker('loader.js');
     getView('telaviv');
     getView('triangle');
     getView('blackAndWhite');
@@ -42,6 +42,7 @@ function getView(tableName) {
                 }
             });
             createGallery(images, title, size, material, year, tableName);
+            imageClicked();
         });
     });
 }
@@ -84,9 +85,9 @@ function createGallery(images, title, size, material, coast, tableName) {
             td.style.verticalAlign = 'top';
             td.style.marginRight = '30px';
             td.style.textAlign = 'center';
-         
+
             var img = document.createElement('img');
-            
+
             img.height = 200;
             img.style.marginBottom = '10px';
             img.src = images[count];
@@ -114,7 +115,7 @@ function createGallery(images, title, size, material, coast, tableName) {
                     td.appendChild(pCoast);
                 }
             }
-            
+
             tr.appendChild(td);
             count++;
         }
@@ -124,7 +125,7 @@ function createGallery(images, title, size, material, coast, tableName) {
         imageTable.style.right = '50px';
     }
     container.appendChild(imageTable);
-    imageClicked();
+
 }
 
 function openSubMenu(str) {
