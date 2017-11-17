@@ -51,7 +51,7 @@
     margin-right: 50px;
     margin-left: 20px;
     margin-bottom: 20px;
-    width: 400px;
+    width: 35%;
 }
 .menuElement{
     color: rgba(133, 123, 134, 1);
@@ -107,13 +107,8 @@
 .link{
     color: rgba(133, 123, 134, 1);
 }
-
 .link:hover{
     color: white;
-}
-button{
-    background: none;
-    border: none;
 }
 body{
     background-image: url("../images/IMG_3353.jpg");
@@ -122,3 +117,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*@media only screen and (max-width: 940px) {*/
+    /*.menuElement{*/
+        /*left: 50px;*/
+    /*}*/
+    /*.subMenu a{*/
+        /*left: 50px;*/
+    /*}*/
+    /*#title{*/
+        /*height: 150px;*/
+    /*}*/
+    /*#container{*/
+        /*height: 1500px;*/
+    /*}*/
+/*}*/
