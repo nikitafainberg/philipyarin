@@ -79,6 +79,7 @@ function createGallery(images, title, size, material, coast, tableName) {
     imageTable.style.right = '50px';
     var count = 0;
     imageTable.border = 0;
+    // alert(imageTable.offsetWidth);
 
     for(var i = 0; i < images.length / 3; i++){
         var tr = document.createElement('tr');
@@ -89,14 +90,11 @@ function createGallery(images, title, size, material, coast, tableName) {
             td.style.textAlign = 'center';
             td.style.width = '30%';
 
+
             var img = document.createElement('img');
 
             img.style.marginBottom = '10px';
             img.src = images[count];
-            // img.style.height = td.offsetWidth;
-            // img.setAttribute('width', 'auto');
-
-            // alert(tr.offsetWidth);
 
             if (images[count]) {
                 var pTitle = document.createElement('p');
@@ -153,13 +151,14 @@ function imageClicked() {
 
                 $('#lightBox img').css({
                     margin: 'auto',
-                    marginTop: '8%',
-                    marginLeft: '10%',
+                    top: '8%',
+                    left: '10%',
                     position: 'absolute'
                 });
 
+                var h = $('#lightBox img').height();
 
-                $('#lightBox').height($('#lightBox img').height() + 300);
+                $('#lightBox').height(h + 300);
 
                 $('#lightBox').click(function () {
                     $('#menu').animate({right: '-=140'}, 350);
