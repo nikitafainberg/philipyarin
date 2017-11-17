@@ -74,9 +74,9 @@ function createGallery(images, title, size, material, coast, tableName) {
     var imageTable = document.createElement('table');
     imageTable.id = tableName;
     imageTable.style.visibility = 'hidden';
-    imageTable.style.width = '65%';
+    imageTable.style.width = '90%';
     imageTable.style.position = 'absolute';
-    imageTable.style.right = '50px';
+    // imageTable.style.right = '50px';
     var count = 0;
     imageTable.border = 0;
     // alert(imageTable.offsetWidth);
@@ -89,6 +89,7 @@ function createGallery(images, title, size, material, coast, tableName) {
             td.style.marginRight = '30px';
             td.style.textAlign = 'center';
             td.style.width = '30%';
+            // td.setAttribute('width', '30%');
 
 
             var img = document.createElement('img');
@@ -143,22 +144,29 @@ function imageClicked() {
             if (!$('#lightBox').length > 0){
 
                 $('#menu').animate({right: '+=140'}, 350);
+
+
+
+
                 $('#container').width($(window).width() - $('#menu').width() - 50);
                 $('#container').append('<div id="lightBoxHolder" style="height:100%"><div id="lightBox"><img src=""/></div></div>');
                 $('#lightBox').width($('#container').width());
                 $('#lightBox img').attr('src', $src);
-                $('#lightBox img').width('80%');
+                // $('#lightBox img').width('80%');
 
-                $('#lightBox img').css({
-                    margin: 'auto',
-                    top: '8%',
-                    left: '10%',
-                    position: 'absolute'
-                });
+                // $('#lightBox img').css({
+                //     margin: 'auto',
+                //     top: '8%',
+                //     left: '10%',
+                //     position: 'absolute'
+                // });
 
-                var h = $('#lightBox img').height();
+                var h = ($('#lightBox').width() * $(this).height()) / $(this).height();
 
-                $('#lightBox').height(h + 300);
+                // alert( $(this).height() + " " + $(this).width());
+                // alert($('#lightBox').width());
+
+                $('#lightBox').height(h);
 
                 $('#lightBox').click(function () {
                     $('#menu').animate({right: '-=140'}, 350);

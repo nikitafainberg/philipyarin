@@ -26,7 +26,7 @@
             position: absolute;
             width: 100%;
             left: 0px;
-            height: 2250px;
+            height: 2500px;
             background-color: rgba(42,33,38,0.9);
         }
         #text{
@@ -36,6 +36,7 @@
             color: rgba(209, 188, 141, 1);
         }
         #container{
+            position: absolute;
             float: right;
             width: 65%;
             margin-top: 50px;
@@ -51,6 +52,10 @@
             background: rgba(0, 0, 0, 0.7);
         }
         #lightBox img{
+            width: 80%;
+            margin: auto;
+            top: 10%;
+            left: 10%;
             position: absolute;
         }
         #avatar{
@@ -127,25 +132,16 @@
             background-size: cover;
         }
         td img{
-            height: 30%;
-            width: auto;
+            width: 70%;
+            /*width: auto;*/
         }
 
-        @media only screen and (max-width: 1350px) {
+        @media only screen and (max-width: 1475px) {
             #menuBackground{
                 height: 1750px;
             }
-            .menuElement{
-                left: 50px;
-            }
-            .subMenu a{
-                left: 50px;
-            }
             #title{
                 height: 150px;
-            }
-            #container{
-                /*height: 1500px;*/
             }
             #container{
                 width: 60%;
@@ -157,7 +153,16 @@
             }
         }
 
-    </style>
+        @media only screen and (max-width: 1200px) {
+            .menuElement{
+                left: 50px;
+            }
+            .subMenu a{
+                left: 50px;
+            }
+        }
+
+</style>
 </head>
 <body onload="init()">
 <div id="title">
