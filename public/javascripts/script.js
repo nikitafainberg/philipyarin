@@ -1,8 +1,7 @@
-var container, table, boolean;//, loader;
+var container, table, boolean;
 
 function init() {
     container = document.getElementById('container');
-    // loader = new Worker('loader.js');
     getView('telaviv');
     getView('triangle');
     getView('blackAndWhite');
@@ -76,10 +75,8 @@ function createGallery(images, title, size, material, coast, tableName) {
     imageTable.style.visibility = 'hidden';
     imageTable.style.width = '90%';
     imageTable.style.position = 'absolute';
-    // imageTable.style.right = '50px';
     var count = 0;
     imageTable.border = 0;
-    // alert(imageTable.offsetWidth);
 
     for(var i = 0; i < images.length / 3; i++){
         var tr = document.createElement('tr');
@@ -89,7 +86,6 @@ function createGallery(images, title, size, material, coast, tableName) {
             td.style.marginRight = '30px';
             td.style.textAlign = 'center';
             td.style.width = '30%';
-            // td.setAttribute('width', '30%');
 
 
             var img = document.createElement('img');
@@ -145,26 +141,12 @@ function imageClicked() {
 
                 $('#menu').animate({right: '+=140'}, 350);
 
-
-
-
                 $('#container').width($(window).width() - $('#menu').width() - 50);
                 $('#container').append('<div id="lightBoxHolder" style="height:100%"><div id="lightBox"><img src=""/></div></div>');
                 $('#lightBox').width($('#container').width());
                 $('#lightBox img').attr('src', $src);
-                // $('#lightBox img').width('80%');
 
-                // $('#lightBox img').css({
-                //     margin: 'auto',
-                //     top: '8%',
-                //     left: '10%',
-                //     position: 'absolute'
-                // });
-
-                var h = ($('#lightBox').width() * $(this).height()) / $(this).height();
-
-                // alert( $(this).height() + " " + $(this).width());
-                // alert($('#lightBox').width());
+                var h = ($('#lightBox').width() * $(this).height()) / $(this).width();
 
                 $('#lightBox').height(h);
 
