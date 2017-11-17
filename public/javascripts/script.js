@@ -87,12 +87,16 @@ function createGallery(images, title, size, material, coast, tableName) {
             td.style.verticalAlign = 'top';
             td.style.marginRight = '30px';
             td.style.textAlign = 'center';
+            td.style.width = '30%';
 
             var img = document.createElement('img');
 
-            img.height = 200;
             img.style.marginBottom = '10px';
             img.src = images[count];
+            // img.style.height = td.offsetWidth;
+            // img.setAttribute('width', 'auto');
+
+            // alert(tr.offsetWidth);
 
             if (images[count]) {
                 var pTitle = document.createElement('p');
@@ -142,54 +146,20 @@ function imageClicked() {
 
                 $('#menu').animate({right: '+=140'}, 350);
                 $('#container').width($(window).width() - $('#menu').width() - 50);
-
-                $('#container').append('<div id="lightBoxHolder" style="position: relative; height:100%"><div id="lightBox"><img src=""/></div></div>');
+                $('#container').append('<div id="lightBoxHolder" style="height:100%"><div id="lightBox"><img src=""/></div></div>');
                 $('#lightBox').width($('#container').width());
-
                 $('#lightBox img').attr('src', $src);
-                // $('#lightBox img').height($(window).height() - 150);
-                // $('#lightBox').height($(window).height());
-
-
                 $('#lightBox img').width('80%');
-                // var width = $('#lightBox img').height() * ($(this).width() / $(this).height());
 
                 $('#lightBox img').css({
-                margin: 'auto',
-                // top: '5%',
-                // left: '5%',
-                marginTop: '10%',
-                marginLeft: '10%',
-                position: 'absolute'
+                    margin: 'auto',
+                    marginTop: '8%',
+                    marginLeft: '10%',
+                    position: 'absolute'
                 });
 
 
                 $('#lightBox').height($('#lightBox img').height() + 300);
-
-                // if((width - $('#container').width()) >= -150 && (width - $('#container').width()) <= 150){
-                    // $('#lightBox img').width($('#container').width() - 150);
-                    // $('#lightBox img').setAttribute('width', '80%');
-                    // $('#lightBox img').setAttribute('marginTop', '10%');
-                    // $('#lightBox img').setAttribute('marginLeft', '10%');
-                    // $('#lightBox img').setAttribute('position', 'absolute');
-                    // $('#lightBox img').css({
-                        // margin: 'auto',
-                        // top: '5%',
-                        // left: '5%',
-                        // marginTop: '5%',
-                        // marginLeft: '5%',
-                        // position: 'absolute'
-                    // });
-
-                // }else {
-                    // $('#lightBox img').width(width);
-                    // $('#lightBox img').css({
-                    //     margin: 'auto',
-                    //     top: 75,
-                    //     left: ($('#container').width() - width) / 2,
-                    //     position: 'absolute'
-                    // });
-                // }
 
                 $('#lightBox').click(function () {
                     $('#menu').animate({right: '-=140'}, 350);
