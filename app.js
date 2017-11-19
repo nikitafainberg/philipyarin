@@ -65,8 +65,6 @@ app.post('/admin', function (req, res) {
     }
 });
 
-
-
 app.post('/upload/:type', upload.any(), function (req, res) {
     var type = req.params.type;
 

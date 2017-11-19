@@ -133,6 +133,7 @@ function openSubMenu(str) {
         $('#draw').slideToggle('slow');
     }
 }
+
 function imageClicked() {
     $(document).ready(function () {
         $('img').click(function () {
